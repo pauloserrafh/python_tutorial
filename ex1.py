@@ -1,9 +1,10 @@
 def is_palindrome(x):
-    #Inverte string usando slicing
+    # Inverte string usando slicing
     rev = x[::-1]
     if x != rev:
         return False
     return True
+
 
 def concat_ends(st):
     if len(st) < 2:
