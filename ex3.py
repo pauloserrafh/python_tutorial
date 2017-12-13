@@ -6,7 +6,7 @@ def combinacoes():
     print(lista[:50])
 
 def vetor():
-    array = [[ ['*' for col in range(6)] for col in range(4)]
+    array = [[['*' for col in range(6)] for col in range(4)]
             for row in range(3)]
     print(array)
 

@@ -51,6 +51,17 @@ def find_key(dic):
             break
     else:
         print("Chave não encontrada")
+def desenha():
+    n=5;
+    for i in range(n):
+        for j in range(i):
+            print ('* ', end="")
+        print('')
+
+    for i in range(n,0,-1):
+        for j in range(i):
+            print('* ', end="")
+        print('')
 
 if __name__ == '__main__':
     a = [2,4,3,5,7]
@@ -71,3 +82,4 @@ if __name__ == '__main__':
     print(lista2dic([4, 6, 5, 1, 9]))
     div9()
     find_key(d)
+    desenha()
