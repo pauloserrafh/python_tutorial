@@ -14,6 +14,12 @@ def grt(entrada):
     if entrada[0] > 4:
         print ("%d tem valor %s" %(entrada[0], entrada[1]))
 
+def pares():
+    x = {'key1': 1, 'key2': 1, 'key3': 2}
+    y = {'key1': 1, 'key2': 2}
+    for (key, value) in set(x.items()) & set(y.items()):
+        print('%s: %s Está presente em ambos os dicionários' % (key, value))
+
 if __name__ == '__main__':
     d = {8: 'apt-get',
     7: 'apt-get',
@@ -29,3 +35,4 @@ if __name__ == '__main__':
     my_func = lambda tp : (tp[2],tp[-5])
     print(my_func((1,2,3,4,5,6)))
     list(map(grt,d.items()))
+    pares()
