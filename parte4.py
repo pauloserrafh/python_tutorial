@@ -1,4 +1,6 @@
+######################################################
 # datetime
+######################################################
 # import datetime
 
 # print(datetime.datetime.now())
@@ -19,8 +21,9 @@
 # hj = datetime.date.today()
 # diff = hj - delta
 # print(diff)
-
+######################################################
 # numpy
+######################################################
 import numpy
 
 # a = numpy.array([2,3,4])
@@ -49,6 +52,7 @@ import numpy
 # a[:6:2] = -1000
 # print(a)
 
+# b = numpy.arange(12).reshape(4,3)
 # for linha in b:
 #     for coluna in linha:
 #         print(coluna)
@@ -56,8 +60,8 @@ import numpy
 # for valor in b.flat:
 #     print(valor)
 
-a = numpy.arange(10)**3
-b = numpy.arange(10)**2
-print(a)
-print(b)
-print(a+b)
+# a = numpy.arange(10)**3
+# b = numpy.arange(10)**2
+# print(a)
+# print(b)
+# print(a+b)

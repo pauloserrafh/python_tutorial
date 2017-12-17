@@ -1,6 +1,8 @@
 import numpy as np
 
+######################################################
 # Questoes numpy
+######################################################
 def bordas():
     x = np.ones((3,3))
     print(x)
@@ -49,8 +51,9 @@ def concatena():
     c = np.concatenate((a, b), 1)
     print(c)
 
+######################################################
 # questoes String
-
+######################################################
 def divide_delimitador():
     str1 = "w,3,r,e,s,o,u,r,c,e"
     print(str1.rsplit(',', 1))
@@ -72,8 +75,9 @@ def reverse_string_words(text):
 def conta_ocorrencias(str1, sub):
     print(str1.count(sub))
 
-
+######################################################
 # Questoes listas
+######################################################
 def last(n): return n[-1]
 
 def sort_list_last(tuples):
@@ -118,4 +122,4 @@ if __name__ == '__main__':
     # print(sort_list_last([(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]))
     # print(long_words(3, "The quick brown fox jumps over the lazy dog"))
     # print(common_data([1,2,3,4,5], [5,6,7,8,9]))
-    inteiro()
+    # inteiro()

@@ -1,8 +1,10 @@
+######################################################
 # set
+######################################################
 # Create a set
-num_set = set([0, 1, 2, 3, 4, 5])
-for n in num_set:
-    print(n)
+# num_set = set([0, 1, 2, 3, 4, 5])
+# for n in num_set:
+#     print(n)
 
 # Cria frozenset
 # x = frozenset([1, 2, 3, 4, 5])
@@ -14,8 +16,9 @@ for n in num_set:
 #new set with elements from both x and y
 # print(x | y)
 
-
+######################################################
 # # map
+######################################################
 # people = ['Dr. Christopher Brooks', 'Dr. Kevyn Collins-Thompson',
 #             'Dr. VG Vinod Vydiswaran', 'Dr. Daniel Romero']
 
@@ -25,8 +28,9 @@ for n in num_set:
 
 # list(map(split_title_and_name, people))
 
-
+######################################################
 # # lambda
+######################################################
 # people = ['Dr. Christopher Brooks', 'Dr. Kevyn Collins-Thompson', 'Dr. VG Vinod Vydiswaran', 'Dr. Daniel Romero']
 
 # def split_title_and_name(person):
@@ -44,8 +48,9 @@ for n in num_set:
 # #option 2
 # list(map(split_title_and_name, people)) == list(map(lambda person : person.split()[0] + ' ' + person.split()[-1], people))
 
-
+######################################################
 # comprehension
+######################################################
 # lista = []
 # for n in range(0,1000):
 #     if n % 2 == 0:
