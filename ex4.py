@@ -1,5 +1,6 @@
 import datetime as dt
-import numpy as np
+import time
+# import numpy as np
 
 def converte():
     date_obj = dt.datetime.strptime('May 12 2016  2:25AM', '%b %d %Y %I:%M%p')
@@ -25,9 +26,17 @@ def segundas():
                 monday1 += 1
     print(monday1)
 
-def inverte(array):
+def inverte(entrada, saida):
+    with open(entrada) as f:
+        array = []
+        valor = int(f.readline())
+        while (valor != '\n' and valor != ''):
+            array.append(int(valor))
+            valor = f.readline()
     inv = array[::-1]
-    print(inv)
+    with open(saida,'w') as out:
+        out.write(str(array)+'\n')
+        out.write(str(inv)+'\n')
 
 def to_array():
     my_list = [1, 2, 3, 4, 5, 6, 7, 8]
@@ -55,11 +64,11 @@ def multiplos():
     print(total)
 
 if __name__ == '__main__':
-    array = np.arange(10)**3
-    converte()
-    segundas()
-    print(array)
-    inverte(array)
-    to_array()
-    soma()
-    multiplos()
+    # array = np.arange(10)**3
+    # converte()
+    # segundas()
+    # print(array)
+    inverte('inverte.txt','invertido.txt')
+    # to_array()
+    # soma()
+    # multiplos()

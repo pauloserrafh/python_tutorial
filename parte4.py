@@ -1,4 +1,22 @@
 ######################################################
+# arquivos
+######################################################
+# Abre o arquivo apenas para leitura
+# f = open('inverte.txt', 'r')
+# print(f.readline())
+# print(f.readline())
+# print(f.readline())
+# print(f.readline())
+# print(f.readline())
+# print(f.readline())
+# f.close()
+
+# Nao precisa fechar o arquivo explicitamente
+# with open('inverte.txt') as f:
+#     print(f.readlines())
+
+
+######################################################
 # datetime
 ######################################################
 # import datetime
@@ -24,7 +42,7 @@
 ######################################################
 # numpy
 ######################################################
-import numpy
+# import numpy
 
 # a = numpy.array([2,3,4])
 # print(a)
