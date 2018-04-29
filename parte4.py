@@ -1,4 +1,38 @@
 ######################################################
+# classes
+######################################################
+# class MinhaClasse:
+#     helloWorld = "Hello, World!"
+
+#     def __init__(self, nome):
+#         self.nome = nome
+
+#     def hello(self):
+#         print("Hello, %s" %self.nome)
+
+#     def whoAmI(self):
+#         return(self.nome)
+
+#     def batizar(self, novoNome):
+#         self.nome = novoNome
+
+# if __name__ =='__main__':
+#     obj = MinhaClasse("Paulo")
+
+#     print(obj.helloWorld)
+
+#     meuNome = obj.whoAmI()
+#     print("Eu me chamo %s" %(meuNome))
+
+#     obj.hello()
+
+#     obj.batizar("Serra")
+#     meuNome = obj.whoAmI()
+#     print("Fui batizado como o novo nome: %s" %(meuNome))
+#     obj.hello()
+
+
+######################################################
 # arquivos
 ######################################################
 # Abre o arquivo apenas para leitura
@@ -39,6 +73,8 @@
 # hj = datetime.date.today()
 # diff = hj - delta
 # print(diff)
+
+
 ######################################################
 # numpy
 ######################################################
