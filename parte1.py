@@ -12,12 +12,24 @@ print("Hello, World!")
 # def parametro_nomeado(a = "Paulo"):
 #     print(a)
 
+# def altera_valores(minhaString, minhaLista):
+#     minhaString = "Nova String"
+#     print(minhaString)
+#     minhaLista.append("Novo valor")
+#     print(minhaLista)
+
 # if __name__ == '__main__':
 #     print("Hello, World!")
 #     print(minha_soma(1,2))
 #     print(calculadora(1,2))
 #     parametro_nomeado()
 #     parametro_nomeado("Serra")
+
+#     s = "String"
+#     lst = ["Valor", "Valor"]
+#     altera_valores(s, lst)
+#     print(s)
+#     print(lst)
 # else:
 #     print("Estou sendo importado")
 

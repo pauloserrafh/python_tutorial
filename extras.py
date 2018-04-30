@@ -107,7 +107,7 @@ def inteiro():
     print("Single Integer: ",x)
 
 if __name__ == '__main__':
-    # bordas()
+    bordas()
     # maior_que(10)
     # ordena()
     # divide()
