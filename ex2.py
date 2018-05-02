@@ -29,6 +29,13 @@ def segundo_maior(numeros):
             scd = n
     return scd
 
+def segundo_maior2(numeros):
+    if(len(numeros) < 2):
+        return -1
+    numeros.sort(reverse=True)
+    return(numeros[1])
+
+
 def lista2dic(lista):
     tmp = {}
     dic = tmp
@@ -52,7 +59,7 @@ def find_key(dic):
     else:
         print("Chave não encontrada")
 def desenha():
-    n=5;
+    n=5
     for i in range(n):
         for j in range(i):
             print ('* ', end="")
@@ -64,22 +71,23 @@ def desenha():
         print('')
 
 if __name__ == '__main__':
-    a = [2,4,3,5,7]
-    b = [4,3]
-    c = [3,7]
-    d = {'Debian': 'apt-get',
-        'Ubuntu': 'apt-get',
-        'Fedora': 'dnf',
-        'CentOS': 'yum',
-        'OpenSUSE': 'zypper',
-        'Arch': 'pacman',
-        'Gentoo': 'emerge',
-        'teste': 'encontrado'
-    }
-    print(sublista(a, b))
-    print(sublista(a, c))
-    print(segundo_maior([4, 6, 5, 1, 9]))
-    print(lista2dic([4, 6, 5, 1, 9]))
-    div9()
-    find_key(d)
-    desenha()
+    # a = [2,4,3,5,7]
+    # b = [4,3]
+    # c = [3,7]
+    # d = {'Debian': 'apt-get',
+    #     'Ubuntu': 'apt-get',
+    #     'Fedora': 'dnf',
+    #     'CentOS': 'yum',
+    #     'OpenSUSE': 'zypper',
+    #     'Arch': 'pacman',
+    #     'Gentoo': 'emerge',
+    #     'teste': 'encontrado'
+    # }
+    # print(sublista(a, b))
+    # print(sublista(a, c))
+    # print(segundo_maior([4, 6, 5, 1, 9]))
+    print(segundo_maior2([4, 6, 5, 1, 9]))
+    # print(lista2dic([4, 6, 5, 1, 9]))
+    # div9()
+    # find_key(d)
+    # desenha()
