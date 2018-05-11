@@ -1,99 +1,83 @@
-print("Hello, World!")
+# print("Hello, World!")
+
+# print(2 and 4)
+# print(2 & 4)
+# print(not 2)
+# print(~2)
+# print("Hello" in "Hello, World")
+
 
 ######################################################
-# Funções
+# Condicionais
 ######################################################
-# def minha_soma(a, b):
-#     return a+b
+# hello = "Hello"
+# world = "World"
+# numero1 = 1
+# numero2 = 2
 
-# def calculadora(a, b):
-#     return a+b,a-b
-
-# def parametro_nomeado(a = "Paulo"):
-#     print(a)
-
-# def altera_valores(minhaString, minhaLista):
-#     minhaString = "Nova String"
-#     print(minhaString)
-#     minhaLista.append("Novo valor")
-#     print(minhaLista)
+# if hello == world:
+#     print("Palavras Iguais")
+# elif numero1 == numero2:
+#     print("Numeros Iguais")
+# else:
+#     print("Tudo diferente")
 
 # if __name__ == '__main__':
 #     print("Hello, World!")
-#     print(minha_soma(1,2))
-#     print(calculadora(1,2))
-#     parametro_nomeado()
-#     parametro_nomeado("Serra")
+# print(__name__)
 
-#     s = "String"
-#     lst = ["Valor", "Valor"]
-#     altera_valores(s, lst)
-#     print(s)
-#     print(lst)
+
+######################################################
+# While
+######################################################
+# i = 0
+# while i < 5:
+#     print(i)
+#     i += 1
 # else:
-#     print("Estou sendo importado")
+#     print("i na saida %d" % i)
+
 
 ######################################################
-# Strings
+# For
 ######################################################
-# print("Hello," + " " + "World!")
-
-# print("Numero" + 2) # ERRO
-# print("Numero" + str(2))
-
-
-# st = "World!"
-# valor = 2
-# print("Hello, " + st)
-# print("Hello, %s %d" % (st, valor))
-
-
-# # Slicing
-# st = "Hello, World!"
-# print(type(st))
-# # print(st[0])
-# # print(st[-1])
-# # print(st[:3])
-# # print(st[-4:-2])
-# print(st[::2])
-
-# # print(len(st))
-# # print(st.find("World!"))
-# print(st.replace("World", "Everybody"))
-
-######################################################
-# # Listas
-######################################################
-# linux_distros = ['Debian', 'Ubuntu', 'Fedora', 'CentOS', 'OpenSUSE',
-#                     'Arch', 'Gentoo']
-# print(type(linux_distros))
-# debian_distros = linux_distros[:2]
-# linux_distros.append("Mint")
-# print(linux_distros)
-# print(linux_distros.pop())
-# linux_distros.insert(2, "Mint")
-# print(linux_distros)
-# linux_distros.remove("Arch")
-# print(linux_distros)
-
-######################################################
-# # Tuplas
-######################################################
-# tp = ('Bacon', 7, True, 11, 'Your mother was a hamster!')
-# print(type(tp))
-# print(tp[1])
-# print(tp[-1])
-# print(len(tp))
-
-######################################################
-# # Condicionais
-######################################################
-# nome1 = "Ai"
-# nome2 = "Ui"
-
-# if nome1[0] == nome2[0]:
-#     print("Primeira letra igual")
-# elif nome1[1] == nome2[1]:
-#     print("Pelo menos a segunda letra é igual")
+# for i in range(1,10):
+#     print(i)
 # else:
-#     print("Tudo diferente")
+#     print("i na saida %d" % i)
+
+
+######################################################
+# break
+######################################################
+# i = 0
+# while True:
+#     if i > 10:
+#         break
+#     print(i)
+#     i += 1
+
+######################################################
+# continue
+######################################################
+# i = 0
+# while i < 10 :
+#     i += 1
+#     if i == 5:
+#         continue
+#     print(i)
+#     # i += 1 #Inserindo o contador aqui, causamos um loop infinito
+
+######################################################
+# pass
+######################################################
+# i = 0
+# while i < 10:
+#     if (i >= 0 and i <= 3):
+#         print(i)
+#     elif (i >= 5 and i <= 6):
+#         print(2*i)
+#     else:
+#         # Aqui vai ser chamada uma funcao qualquer que ainda não foi implementada
+#         pass
+#     i += 1

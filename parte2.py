@@ -1,4 +1,96 @@
 ######################################################
+# Strings
+######################################################
+# print("Hello," + " " + "World!")
+
+# print("Numero" + 2) # ERRO
+# print("Numero" + str(2))
+
+
+# st = "World!"
+# valor = 2
+# print("Hello, " + st)
+# print("Hello, %s %d" % (st, valor))
+
+
+# # Slicing
+# st = "Hello, World!"
+# print(type(st))
+# # print(st[0])
+# # print(st[-1])
+# # print(st[:3])
+# # print(st[-4:-2])
+# print(st[::2])
+
+# # print(len(st))
+# # print(st.find("World!"))
+# print(st.replace("World", "Everybody"))
+
+######################################################
+# # Listas
+######################################################
+# linux_distros = ['Debian', 'Ubuntu', 'Fedora', 'CentOS', 'OpenSUSE',
+#                     'Arch', 'Gentoo']
+# print(type(linux_distros))
+# debian_distros = linux_distros[:2]
+# linux_distros.append("Mint")
+# print(linux_distros)
+# print(linux_distros.pop())
+# linux_distros.insert(2, "Mint")
+# print(linux_distros)
+# linux_distros.remove("Arch")
+# print(linux_distros)
+
+
+# linux_distros = ['Debian', 'Ubuntu', 'Fedora', 'CentOS', 'OpenSUSE',
+#                     'Arch', 'Gentoo']
+# for distro in linux_distros:
+#     print(distro.upper())
+# else:
+#     print("Toda a lista foi percorrida")
+
+# number_sets = [[2, 4, 6], [3, 6, 9], [4, 8, 12]]
+# square_sets = []
+# for number_set in number_sets:
+#     square_sets.append([])
+#     for number in number_set:
+#         print("Numero original %d, numero ao quadrado %d."
+#                  % (number, number ** 2))
+#         square_sets[number_sets.index(number_set)].append(number ** 2)
+# print(number_sets)
+# print(square_sets)
+
+
+
+
+# for distro in linux_distros:
+#     if distro == "Ubuntu":
+#         print("É uma distro válida")
+#         break
+# else:
+#     print("Toda a lista foi percorrida. Não é uma distro válida")
+
+
+# linux_distros = ['Debian', 'Ubuntu', 'Fedora', 'CentOS', 'OpenSUSE',
+#                     'Arch', 'Gentoo']
+# for distro in linux_distros:
+#     if distro == "Ubuntu":
+#         continue
+#     print(distro)
+# else:
+#     print("Toda a lista foi percorrida.")
+
+######################################################
+# # Tuplas
+######################################################
+# tp = ('Bacon', 7, True, 11, 'Your mother was a hamster!')
+# print(type(tp))
+# print(tp[1])
+# print(tp[-1])
+# print(len(tp))
+
+
+######################################################
 # Dicionarios
 ######################################################
 # distro_install_command = {'Debian': 'apt-get',
@@ -39,89 +131,33 @@
 #     %(CentOS)s, %(OpenSUSE)s, %(Arch)s ou %(Gentoo)s" % distro_install_command)
 
 ######################################################
-# # While
+# Funcoes
 ######################################################
-# i = 0
-# while i < 5:
-#     print(i)
-#     i += 1
+# def minha_soma(a, b):
+#     return a+b
+
+# def calculadora(a, b):
+#     return a+b,a-b
+
+# def parametro_nomeado(a = "Paulo"):
+#     print(a)
+
+# def altera_valores(minhaString, minhaLista):
+#     minhaString = "Nova String"
+#     print(minhaString)
+#     minhaLista.append("Novo valor")
+#     print(minhaLista)
+
+# if __name__ == '__main__':
+#     print(minha_soma(1,2))
+#     print(calculadora(1,2))
+#     parametro_nomeado()
+#     parametro_nomeado("Serra")
+
+#     s = "String"
+#     lst = ["Valor", "Valor"]
+#     altera_valores(s, lst)
+#     print(s)
+#     print(lst)
 # else:
-#     print("i na saida %d" % i)
-
-######################################################
-# # For
-######################################################
-# for i in range(1,10):
-#     print(i)
-# else:
-#     print("i na saida %d" % i)
-
-# linux_distros = ['Debian', 'Ubuntu', 'Fedora', 'CentOS', 'OpenSUSE',
-#                     'Arch', 'Gentoo']
-# for distro in linux_distros:
-#     print(distro.upper())
-# else:
-#     print("Toda a lista foi percorrida")
-
-# number_sets = [[2, 4, 6], [3, 6, 9], [4, 8, 12]]
-# square_sets = []
-# for number_set in number_sets:
-#     square_sets.append([])
-#     for number in number_set:
-#         print("Numero original %d, numero ao quadrado %d."
-#                  % (number, number ** 2))
-#         square_sets[number_sets.index(number_set)].append(number ** 2)
-# print(number_sets)
-# print(square_sets)
-
-######################################################
-# # break
-######################################################
-# for distro in linux_distros:
-#     if distro == "Ubuntu":
-#         print("É uma distro válida")
-#         break
-# else:
-#     print("Toda a lista foi percorrida. Não é uma distro válida")
-
-# i = 0
-# while True:
-#     if i > 10:
-#         break
-#     print(i)
-#     i += 1
-
-######################################################
-# continue
-######################################################
-# linux_distros = ['Debian', 'Ubuntu', 'Fedora', 'CentOS', 'OpenSUSE',
-#                     'Arch', 'Gentoo']
-# for distro in linux_distros:
-#     if distro == "Ubuntu":
-#         continue
-#     print(distro)
-# else:
-#     print("Toda a lista foi percorrida.")
-
-# i = 0
-# while i < 10 :
-#     i += 1
-#     if i == 5:
-#         continue
-#     print(i)
-#     # i += 1 #Inserindo o contador aqui, causamos um loop infinito
-
-######################################################
-# pass
-######################################################
-# i = 0
-# while i < 10:
-#     if (i >= 0 and i <= 3):
-#         print(i)
-#     elif (i >= 5 and i <= 6):
-#         print(2*i)
-#     else:
-#         # Aqui vai ser chamada uma funcao qualquer que ainda não foi implementada
-#         pass
-#     i += 1
-
+#     print("Estou sendo importado")

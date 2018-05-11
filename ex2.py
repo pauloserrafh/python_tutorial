@@ -1,21 +1,3 @@
-def sublista(l, s):
-    sub_set = False
-    if s == []:
-        sub_set = True
-    elif s == l:
-        sub_set = True
-    elif len(s) > len(l):
-        sub_set = False
-    else:
-        for i in range(len(l)):
-            if l[i] == s[0]:
-                n = 1
-                while (n < len(s)) and (l[i+n] == s[n]):
-                    n += 1
-                if n == len(s):
-                    sub_set = True
-    return sub_set
-
 def segundo_maior(numeros):
     if len(numeros) < 2:
         return -1
@@ -35,21 +17,6 @@ def segundo_maior2(numeros):
     numeros.sort(reverse=True)
     return(numeros[1])
 
-
-def lista2dic(lista):
-    tmp = {}
-    dic = tmp
-    for nome in lista:
-        tmp[nome] = {}
-        tmp = tmp[nome]
-    return dic
-
-def div9():
-    for x in range(30):
-        if not x % 9:
-            continue
-        print(x)
-
 def find_key(dic):
     chaves = dic.keys()
     for chave in chaves:
@@ -58,22 +25,40 @@ def find_key(dic):
             break
     else:
         print("Chave não encontrada")
-def desenha():
-    n=5
-    for i in range(n):
-        for j in range(i):
-            print ('* ', end="")
-        print('')
 
-    for i in range(n,0,-1):
-        for j in range(i):
-            print('* ', end="")
-        print('')
+
+def is_palindrome(x):
+    # Inverte string usando slicing
+    rev = x[::-1]
+    if x != rev:
+        return False
+    return True
+
+def concat_ends(st):
+    if len(st) < 2:
+        return ""
+    return st[0:2] + st[-2:]
+
+def print_tupla(tp):
+    return (tp[2],tp[-5])
+
+def lista_vazia(lista):
+    if not lista:
+        print("Lista vazia")
+    else:
+        print("Lista contem ao menos um elemento")
+
+def lista2string(lista):
+    return "".join(lista)
 
 if __name__ == '__main__':
-    # a = [2,4,3,5,7]
-    # b = [4,3]
-    # c = [3,7]
+    # print(is_palindrome("arara"))
+    # print(concat_ends("asdzxc"))
+    # print(print_tupla((1,2,3,4,5,6)))
+    # lista_vazia([])
+    # print(lista2string(['p','y','t','h','o','n']))
+    # print(segundo_maior([4, 6, 5, 1, 9]))
+    # print(segundo_maior2([4, 6, 5, 1, 9]))
     # d = {'Debian': 'apt-get',
     #     'Ubuntu': 'apt-get',
     #     'Fedora': 'dnf',
@@ -83,11 +68,4 @@ if __name__ == '__main__':
     #     'Gentoo': 'emerge',
     #     'teste': 'encontrado'
     # }
-    # print(sublista(a, b))
-    # print(sublista(a, c))
-    # print(segundo_maior([4, 6, 5, 1, 9]))
-    print(segundo_maior2([4, 6, 5, 1, 9]))
-    # print(lista2dic([4, 6, 5, 1, 9]))
-    # div9()
     # find_key(d)
-    # desenha()

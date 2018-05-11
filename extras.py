@@ -106,6 +106,59 @@ def inteiro():
     x = int("".join(map(str, L)))
     print("Single Integer: ",x)
 
+    def lista2dic(lista):
+    tmp = {}
+    dic = tmp
+    for nome in lista:
+        tmp[nome] = {}
+        tmp = tmp[nome]
+    return dic
+
+    def sublista(l, s):
+    sub_set = False
+    if s == []:
+        sub_set = True
+    elif s == l:
+        sub_set = True
+    elif len(s) > len(l):
+        sub_set = False
+    else:
+        for i in range(len(l)):
+            if l[i] == s[0]:
+                n = 1
+                while (n < len(s)) and (l[i+n] == s[n]):
+                    n += 1
+                if n == len(s):
+                    sub_set = True
+    return sub_set
+
+def sublista2(l, s):
+    sub_set = False
+    error = False
+    if s == []:
+        sub_set = True
+    elif s == l:
+        sub_set = True
+    elif len(s) > len(l):
+        sub_set = False
+    else:
+        for i in s:
+            if i not in l:
+                error = True
+        sub_set = !error
+    return sub_set
+
+######################################################
+# Questoes funcoes
+######################################################
+def max_dois(x, y):
+    if x > y:
+        return x
+    return y
+
+def max_tres(x, y, z):
+    return max_dois(x, max_dois(y, z))
+
 if __name__ == '__main__':
     bordas()
     # maior_que(10)
@@ -123,3 +176,20 @@ if __name__ == '__main__':
     # print(long_words(3, "The quick brown fox jumps over the lazy dog"))
     # print(common_data([1,2,3,4,5], [5,6,7,8,9]))
     # inteiro()
+    # print(max_tres(3, 6, -5))
+    # a = [2,4,3,5,7]
+    # b = [4,3]
+    # c = [3,7]
+    # d = {'Debian': 'apt-get',
+    #     'Ubuntu': 'apt-get',
+    #     'Fedora': 'dnf',
+    #     'CentOS': 'yum',
+    #     'OpenSUSE': 'zypper',
+    #     'Arch': 'pacman',
+    #     'Gentoo': 'emerge',
+    #     'teste': 'encontrado'
+    # }
+    # print(sublista(a, b))
+    # print(sublista(a, c))
+    
+    # print(lista2dic([4, 6, 5, 1, 9]))
