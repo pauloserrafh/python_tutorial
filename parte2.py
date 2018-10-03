@@ -13,17 +13,17 @@
 # print("Hello, %s %d" % (st, valor))
 
 
-# # Slicing
+# Slicing
 # st = "Hello, World!"
 # print(type(st))
-# # print(st[0])
-# # print(st[-1])
-# # print(st[:3])
-# # print(st[-4:-2])
+# print(st[0])
+# print(st[-1])
+# print(st[:3])
+# print(st[-4:-2])
 # print(st[::2])
 
-# # print(len(st))
-# # print(st.find("World!"))
+# print(len(st))
+# print(st.find("World!"))
 # print(st.replace("World", "Everybody"))
 
 ######################################################
@@ -65,10 +65,10 @@
 
 # for distro in linux_distros:
 #     if distro == "Ubuntu":
-#         print("É uma distro válida")
+#         print("Distro valida")
 #         break
 # else:
-#     print("Toda a lista foi percorrida. Não é uma distro válida")
+#     print("Toda a lista foi percorrida. Nao eh uma distro valida")
 
 
 # linux_distros = ['Debian', 'Ubuntu', 'Fedora', 'CentOS', 'OpenSUSE',
@@ -127,7 +127,7 @@
 # for command in distro_commands:
 #     print(command)
 
-# print("Baseado na sua distro, você deve usar %(Ubuntu)s, %(Fedora)s,\
+# print("Baseado na sua distro, voce deve usar %(Ubuntu)s, %(Fedora)s,\
 #     %(CentOS)s, %(OpenSUSE)s, %(Arch)s ou %(Gentoo)s" % distro_install_command)
 
 ######################################################
@@ -136,28 +136,29 @@
 # def minha_soma(a, b):
 #     return a+b
 
-# def calculadora(a, b):
-#     return a+b,a-b
+def calculadora(a, b):
+    return a+b,a-b
 
-# def parametro_nomeado(a = "Paulo"):
-#     print(a)
+def parametro_nomeado(a = "Paulo"):
+    print(a)
 
-# def altera_valores(minhaString, minhaLista):
-#     minhaString = "Nova String"
-#     print(minhaString)
-#     minhaLista.append("Novo valor")
-#     print(minhaLista)
+def altera_valores(minhaString, minhaLista):
+    minhaString = "Nova String"
+    print(minhaString)
+    minhaLista.append("Novo valor")
+    print(minhaLista)
 
-# if __name__ == '__main__':
+if __name__ == '__main__':
 #     print(minha_soma(1,2))
-#     print(calculadora(1,2))
-#     parametro_nomeado()
-#     parametro_nomeado("Serra")
+    # print(calculadora(1,2))
+    # parametro_nomeado()
+    # parametro_nomeado("Serra")
 
-#     s = "String"
-#     lst = ["Valor", "Valor"]
-#     altera_valores(s, lst)
-#     print(s)
-#     print(lst)
+    s = "String"
+    lst = ["Valor", "Valor"]
+    altera_valores(s, lst)
+    print("Depois da funcao")
+    print(s)
+    print(lst)
 # else:
 #     print("Estou sendo importado")

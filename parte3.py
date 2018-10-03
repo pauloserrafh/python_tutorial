@@ -18,7 +18,7 @@
 
 ######################################################
 # # map
-######################################################
+# ######################################################
 # people = ['Dr. Christopher Brooks', 'Dr. Kevyn Collins-Thompson',
 #             'Dr. VG Vinod Vydiswaran', 'Dr. Daniel Romero']
 
@@ -26,7 +26,8 @@
 #     p = person.split(" ")
 #     return p[0] + " " + p[2]
 
-# list(map(split_title_and_name, people))
+# print(list(map(split_title_and_name, people)))
+# print(type(map(split_title_and_name, people)))
 
 ######################################################
 # # lambda
@@ -36,16 +37,16 @@
 # def split_title_and_name(person):
 #     return person.split()[0] + ' ' + person.split()[-1]
 
-# #option 1
+#option 1
 # for person in people:
 #     my_func = lambda person:person.split()[0] + ' ' + person.split()[-1]
 #     print(split_title_and_name(person) == (my_func(person)))
 
-# # for person in people:
-# #     print(split_title_and_name(person) == (lambda x: x.split()[0] + ' ' + x.split()[-1])(person))
+# for person in people:
+#     print(split_title_and_name(person) == (lambda x: x.split()[0] + ' ' + x.split()[-1])(person))
 
 
-# #option 2
+#option 2
 # list(map(split_title_and_name, people)) == list(map(lambda person : person.split()[0] + ' ' + person.split()[-1], people))
 
 ######################################################
@@ -70,6 +71,6 @@
 #             lst.append(i*j)
 #     return lst
 
-# times_tables() == [(i*j) for i in range(10) for j in range(10)]
+# print(times_tables() == [(i*j) for i in range(10) for j in range(10)])
 
 # t = [(i*j) for i in range(10) for j in range(10)]

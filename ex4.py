@@ -3,7 +3,7 @@ import time
 # import numpy as np
 
 def converte():
-    date_obj = dt.datetime.strptime('May 12 2016  2:25AM', '%b %d %Y %I:%M%p')
+    date_obj = dt.datetime.strptime('2016/05/12', '%Y/%m/%d')
     print(date_obj)
 
     now = dt.datetime.now()
@@ -57,18 +57,39 @@ def multiplos():
     n= x[(x % 3 == 0) | (x % 5 == 0)]
     print(n)
     # print sum the numbers
-    # print(n.sum())
+    print(n.sum())
     total = 0
     for valor in n:
         total += valor
     print(total)
 
+def uniqueElements():
+    x = np.array([10, 10, 20, 20, 30, 30])
+    print("Original array:")
+    print(x)
+    print("Unique elements of the above array:")
+    print(np.unique(x))
+    x = np.array([[1, 1], [2, 3]])
+    print("Original array:")
+    print(x)
+    print("Unique elements of the above array:")
+    print(np.unique(x))
+
+def repetidos():
+    array1 = np.array([0, 10, 20, 40, 60])
+    print("Array1: ",array1)
+    array2 = [10, 30, 40]
+    print("Array2: ",array2)
+    print("Common values between two arrays:")
+    print(np.intersect1d(array1, array2))
+
+
 if __name__ == '__main__':
     # array = np.arange(10)**3
-    # converte()
+    converte()
     # segundas()
     # print(array)
-    inverte('inverte.txt','invertido.txt')
+    # inverte('inverte.txt','invertido.txt')
     # to_array()
     # soma()
     # multiplos()

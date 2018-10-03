@@ -7,7 +7,7 @@ import numpy as np
 # s = pd.Series(np.random.randn(5), index=['a', 'b', 'c', 'd', 'e'])
 # print(s)
 
-# Series a partir de um dicionario
+# # Series a partir de um dicionario
 # d = {'a' : 0., 'b' : 1., 'c' : 2.}
 
 # sd = pd.Series(d)
@@ -38,14 +38,14 @@ import numpy as np
 # print(df.columns)
 # print(df['one']['a'])
 
-# DataFrame a partir de uma lista de dicionários
-# data2 = [{'a': 1, 'b': 2}, {'a': 5, 'b': 10, 'c': 20}]
+# DataFrame a partir de uma lista de dicionarios
+data2 = [{'a': 1, 'b': 2}, {'a': 5, 'b': 10, 'c': 20}]
 
 # Sem nomear indice explicitamente
-# pd.DataFrame(data2)
+pd.DataFrame(data2)
 
 # Nomeando indices explicitamente
-# print(pd.DataFrame(data2, index=['first', 'second']))
+print(pd.DataFrame(data2, index=['first', 'second']))
 
 # Restringindo colunas
 # print(pd.DataFrame(data2, columns=['a', 'b']))
@@ -57,7 +57,7 @@ exam_data  = {'name': ['Anastasia', 'Dima', 'Katherine', 'James', 'Emily', 'Mich
         'qualify': ['yes', 'no', 'yes', 'no', 'no', 'yes', 'yes', 'no', 'no', 'yes']}
 labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
 
-df = pd.DataFrame(exam_data , index=labels)
+# df = pd.DataFrame(exam_data , index=labels)
 # print(df)
 # print("\nMaior score no dataFrame:")
 # max_score = df['score'].max()
@@ -69,9 +69,9 @@ df = pd.DataFrame(exam_data , index=labels)
 # df.to_csv('exemplo_noindex.csv', index=False)
 # df.to_csv('exemplo_noheader.csv', header=False)
 
-# df2 = pd.read_csv('exemplo.csv', index_col=0)
-# print(df2)
+df2 = pd.read_csv('final.csv', index_col=0)
+print(df2)
 # df2 = pd.read_csv('exemplo_noindex.csv')
 # print(df2)
-df2 = pd.read_csv('exemplo_noheader.csv', index_col=0, header=None)
-print(df2)
+# df2 = pd.read_csv('exemplo_noheader.csv', index_col=0, header=None)
+# print(df2)

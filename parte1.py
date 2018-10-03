@@ -4,7 +4,7 @@
 # print(2 & 4)
 # print(not 2)
 # print(~2)
-# print("Hello" in "Hello, World")
+# print("Hello" not in "Hello, World")
 
 
 ######################################################
@@ -13,7 +13,7 @@
 # hello = "Hello"
 # world = "World"
 # numero1 = 1
-# numero2 = 2
+# numero2 = 1
 
 # if hello == world:
 #     print("Palavras Iguais")
@@ -24,6 +24,7 @@
 
 # if __name__ == '__main__':
 #     print("Hello, World!")
+# print("Teste")
 # print(__name__)
 
 
@@ -34,6 +35,9 @@
 # while i < 5:
 #     print(i)
 #     i += 1
+#     if(i==3):
+#         print("Break")
+#         break
 # else:
 #     print("i na saida %d" % i)
 
@@ -66,18 +70,18 @@
 #     if i == 5:
 #         continue
 #     print(i)
-#     # i += 1 #Inserindo o contador aqui, causamos um loop infinito
+    # i += 1 #Inserindo o contador aqui, causamos um loop infinito
 
 ######################################################
 # pass
 ######################################################
-# i = 0
-# while i < 10:
-#     if (i >= 0 and i <= 3):
-#         print(i)
-#     elif (i >= 5 and i <= 6):
-#         print(2*i)
-#     else:
-#         # Aqui vai ser chamada uma funcao qualquer que ainda não foi implementada
-#         pass
-#     i += 1
+i = 0
+while i < 10:
+    if (i >= 0 and i <= 3):
+        print(i)
+    elif (i >= 5 and i <= 6):
+        print(2*i)
+    else:
+        # Aqui vai ser chamada uma funcao qualquer que ainda nao foi implementada
+        pass
+    i += 1
