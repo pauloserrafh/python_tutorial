@@ -149,16 +149,16 @@ def altera_valores(minhaString, minhaLista):
     print(minhaLista)
 
 if __name__ == '__main__':
-#     print(minha_soma(1,2))
-    # print(calculadora(1,2))
-    # parametro_nomeado()
-    # parametro_nomeado("Serra")
+#    print(minha_soma(1,2))
+#    print(calculadora(1,2))
+#    parametro_nomeado()
+#    parametro_nomeado("Serra")
 
-    s = "String"
-    lst = ["Valor", "Valor"]
-    altera_valores(s, lst)
-    print("Depois da funcao")
-    print(s)
-    print(lst)
+#    s = "String"
+#    lst = ["Valor", "Valor"]
+#    altera_valores(s, lst)
+#    print("Depois da funcao")
+#    print(s)
+#    print(lst)
 # else:
 #     print("Estou sendo importado")

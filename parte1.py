@@ -75,13 +75,13 @@
 ######################################################
 # pass
 ######################################################
-i = 0
-while i < 10:
-    if (i >= 0 and i <= 3):
-        print(i)
-    elif (i >= 5 and i <= 6):
-        print(2*i)
-    else:
-        # Aqui vai ser chamada uma funcao qualquer que ainda nao foi implementada
-        pass
-    i += 1
+# i = 0
+# while i < 10:
+#     if (i >= 0 and i <= 3):
+#         print(i)
+#     elif (i >= 5 and i <= 6):
+#         print(2*i)
+#     else:
+#         # Aqui vai ser chamada uma funcao qualquer que ainda nao foi implementada
+#         pass
+#     i += 1

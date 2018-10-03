@@ -1,77 +1,51 @@
 ######################################################
-# pandas
+# numpy
 ######################################################
-import pandas as pd
-import numpy as np
+# import numpy
 
-# s = pd.Series(np.random.randn(5), index=['a', 'b', 'c', 'd', 'e'])
-# print(s)
+# a = numpy.array([2,3,4])
+# print(a)
+# print(a.dtype)
+# b = numpy.array([1.2, 3.5, 5.1])
+# print(b)
+# print(b.dtype)
 
-# # Series a partir de um dicionario
-# d = {'a' : 0., 'b' : 1., 'c' : 2.}
+# b = numpy.arange(12).reshape(4,3)
+# print(b)
 
-# sd = pd.Series(d)
-# print(sd)
+# c = numpy.arange(24).reshape(2,3,4)
+# print(c)
 
-# sd_index = pd.Series(d, index=['b', 'c', 'd', 'a'])
-# print(sd_index)
+# z = numpy.zeros((3,4))
+# print(z)
 
-# Acesso a valores da serie atraves do indice
-# print(sd['a'])
+# print(numpy.arange(10, 30, 5))
 
-# Operacoes com series
-# print(sd)
-# print(sd+sd)
+# print(numpy.linspace( 0, 2, 9 ))
 
-# print(sd[1:])
-# print(sd[:-1])
-# print(sd[1:]+sd[:-1])
+# a = numpy.arange(10)**3
+# print(a)
+# print(a[2:5])
+# a[:6:2] = -1000
+# print(a)
 
+# b = numpy.arange(12).reshape(4,3)
+# for linha in b:
+#     print(linha)
+#     for coluna in linha:
+#         print(coluna)
 
-# d = {'one' : pd.Series([1., 2., 3.], index=['a', 'b', 'c']),
-#     'two' : pd.Series([1., 2., 3., 4.], index=['a', 'b', 'c', 'd'])}
+# for valor in b.flat:
+#     print(valor)
 
-# df = pd.DataFrame(d)
-# print(df)
+# a = numpy.arange(10)**3
+# b = numpy.arange(10)**2
 
-# print(df.index)
-# print(df.columns)
-# print(df['one']['a'])
+# print(a)
+# print(b)
+# print(a+b)
+# print(a.mean())
+# print(a.max())
 
-# DataFrame a partir de uma lista de dicionarios
-data2 = [{'a': 1, 'b': 2}, {'a': 5, 'b': 10, 'c': 20}]
-
-# Sem nomear indice explicitamente
-pd.DataFrame(data2)
-
-# Nomeando indices explicitamente
-print(pd.DataFrame(data2, index=['first', 'second']))
-
-# Restringindo colunas
-# print(pd.DataFrame(data2, columns=['a', 'b']))
-
-# Usando funcoes nativas e comparacoes
-exam_data  = {'name': ['Anastasia', 'Dima', 'Katherine', 'James', 'Emily', 'Michael', 'Matthew', 'Laura', 'Kevin', 'Jonas'],
-        'score': [12.5, 9, 16.5, np.nan, 9, 20, 14.5, np.nan, 8, 19],
-        'attempts': [1, 3, 2, 3, 2, 3, 1, 1, 2, 1],
-        'qualify': ['yes', 'no', 'yes', 'no', 'no', 'yes', 'yes', 'no', 'no', 'yes']}
-labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
-
-# df = pd.DataFrame(exam_data , index=labels)
-# print(df)
-# print("\nMaior score no dataFrame:")
-# max_score = df['score'].max()
-# print(df[df['score'] == max_score])
-
-
-# Leitura e escrita de CSV
-# df.to_csv('exemplo.csv')
-# df.to_csv('exemplo_noindex.csv', index=False)
-# df.to_csv('exemplo_noheader.csv', header=False)
-
-df2 = pd.read_csv('final.csv', index_col=0)
-print(df2)
-# df2 = pd.read_csv('exemplo_noindex.csv')
-# print(df2)
-# df2 = pd.read_csv('exemplo_noheader.csv', index_col=0, header=None)
-# print(df2)
+# c = numpy.arange(24).reshape(2,3,4)
+# print(c.max())
